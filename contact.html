@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GreenGrow Landscaping</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/greengrow-logo.jpg" alt="GreenGrow Landscaping Logo" class="logo">
+            <div id="greeting" class="greeting"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>Get in touch to discuss your landscaping needs</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Our Information</h2>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>Circle</p>
+                    <p>Accra,</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>(233) 545996596</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>info@greengrow.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 8am - 6pm</p>
+                    <p>Saturday: 9am - 4pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <div id="form-status"></div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="" selected disabled>Select a service</option>
+                            <option value="garden-design">Garden Design</option>
+                            <option value="landscape-installation">Landscape Installation</option>
+                            <option value="garden-maintenance">Garden Maintenance</option>
+                            <option value="outdoor-living">Outdoor Living Spaces</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <div id="previous-submissions"></div>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>GreenGrow Assistant</h3>
+            <button id="close-chat">×</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="bot-message">Hello! Need help with the contact form? Just ask!</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    <button id="chat-button" class="chat-button">Chat with us</button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GreenGrow Landscaping</h3>
+                <p>Creating beautiful outdoor spaces since 2017</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 8am - 6pm</p>
+                <p>Saturday: 9am - 4pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (233) 545996596</p>
+                <p>Email: info@greengrow.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 GreenGrow Landscaping. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
